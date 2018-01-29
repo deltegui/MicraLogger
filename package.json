@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frikiman34/MicroLogger.git"
+    "url": "git+https://github.com/frikiman34/MicraLogger.git"
   },
   "keywords": [
     "logger",
@@ -22,7 +22,7 @@
   "author": "Diego Delgado",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/frikiman34/MicroLogger/issues"
+    "url": "https://github.com/frikiman34/MicraLogger/issues"
   },
-  "homepage": "https://github.com/frikiman34/MicroLogger#readme"
+  "homepage": "https://github.com/frikiman34/MicraLogger#readme"
 }
