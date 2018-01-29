@@ -27,7 +27,7 @@ class Logger {
 
   formatLog(msg, color) {
     const d = new Date();
-    const dateStr = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()}` +
+    const dateStr = `${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()}` +
                     ` ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
 
     const outColor = color || this.colors.white;
