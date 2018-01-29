@@ -28,8 +28,8 @@ log.success('Message');
 That code result in the following output:
 
 ```
-29/0/2018 17:31:11 [INFO] (Demo) Message
-29/0/2018 17:31:11 [WARNING] (Demo) Message
-29/0/2018 17:31:11 [ERROR] (Demo) Message
-29/0/2018 17:31:11 [SUCCESS] (Demo) Message
+29/1/2018 17:31:11 [INFO] (Demo) Message
+29/1/2018 17:31:11 [WARNING] (Demo) Message
+29/1/2018 17:31:11 [ERROR] (Demo) Message
+29/1/2018 17:31:11 [SUCCESS] (Demo) Message
 ```
