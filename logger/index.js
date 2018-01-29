@@ -7,7 +7,13 @@ if(env === 'production') log = new Logger('./app.log');
 else log = new Logger();
 
 function createLogWrapper(moduleName) {
-  return (msg, method = 'info') => log[method](`(${moduleName}) ${msg}`);
+  const logCall = (method='info', msg) => log[method](`(${moduleName}) ${msg}`);
+  return {
+    info: msg => logCall('info', msg),
+    warning: msg => logCall('warning', msg),
+    error: msg => logCall('error', msg),
+    success: msg => logCall('success', msg),
+  }
 }
 
 function createLogMock() {

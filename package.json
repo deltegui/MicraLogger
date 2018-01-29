@@ -1,6 +1,6 @@
 {
-  "name": "micrologger",
-  "version": "1.0.0",
+  "name": "micralogger",
+  "version": "0.0.2",
   "description": "small logger for node.js",
   "main": "index.js",
   "dependencies": {
