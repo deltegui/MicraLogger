@@ -3,10 +3,10 @@ const loggerMiddlewares = require('./middlewares');
 
 function enableUncaughtExceptionLogger() {
   process.on('uncaughtException', (err) => {
-    const deathLog = createLogWrapper('DEATH MESSAGE');
-    deathLog(`A fatal error happened. The error is: ${err}`, 'error');
-    deathLog(`Stack Trace: ${err.stack}`, 'error');
-    deathLog('This is a fatal error. The app will exit soon...', 'error');
+    const deathLog = loggerConstructor('DEATH MESSAGE');
+    deathLog.error(`A fatal error happened. The error is: ${err}`);
+    deathLog.error(`Stack Trace: ${err.stack}`);
+    deathLog.error('This is a fatal error. The app will exit soon...');
     process.exit(1);
   });
 }
